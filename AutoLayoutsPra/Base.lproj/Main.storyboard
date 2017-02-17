@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +18,102 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nM5-8a-yGh" userLabel="CarView">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbJ-Lm-kO7">
+                                        <frame key="frameInset" minX="29" minY="152.5" width="101.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jHh-w5-Hl6">
+                                        <frame key="frameInset" minX="29" minY="33" width="101.5" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5T-Zr-as5" userLabel="ArrowView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow-bold-left-ios-7-interface-symbol_318-34824.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="4WU-66-uR7">
+                                        <frame key="frameInset" minX="29.5" minY="25" width="101" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arrow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKT-P9-yIN">
+                                        <frame key="frameInset" minX="29.5" minY="151" width="101" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96v-IH-PNT" userLabel="AppleView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="knowledge_graph_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bu9-m3-UoL">
+                                        <frame key="frameInset" minX="29.5" minY="32" width="101" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSs-4I-510">
+                                        <frame key="frameInset" minX="29.5" minY="158" width="101" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUH-pJ-z7d" userLabel="SeatView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wE5-mP-FUX">
+                                        <frame key="frameInset" minX="29.5" minY="33" width="101" height="104.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsc-nL-gTs">
+                                        <frame key="frameInset" minX="29.5" minY="152.5" width="101" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44993025064468384" green="0.90849363803863525" blue="0.88834327459335327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x5T-Zr-as5" firstAttribute="top" secondItem="nM5-8a-yGh" secondAttribute="bottom" constant="1" id="1pE-Uh-qcO"/>
+                            <constraint firstItem="x5T-Zr-as5" firstAttribute="height" secondItem="nM5-8a-yGh" secondAttribute="height" id="1pz-H4-RJk"/>
+                            <constraint firstAttribute="trailing" secondItem="96v-IH-PNT" secondAttribute="trailing" id="3tC-IN-hde"/>
+                            <constraint firstItem="tUH-pJ-z7d" firstAttribute="leading" secondItem="nM5-8a-yGh" secondAttribute="trailing" constant="1" id="40b-7G-vwa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="96v-IH-PNT" secondAttribute="bottom" id="9La-oC-O9r"/>
+                            <constraint firstItem="96v-IH-PNT" firstAttribute="top" secondItem="tUH-pJ-z7d" secondAttribute="bottom" constant="1" id="CPp-08-4fi"/>
+                            <constraint firstAttribute="trailing" secondItem="tUH-pJ-z7d" secondAttribute="trailing" id="LYM-Xt-rf5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x5T-Zr-as5" secondAttribute="bottom" id="OXd-Lg-eqS"/>
+                            <constraint firstItem="nM5-8a-yGh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bHb-Ho-3OR"/>
+                            <constraint firstItem="96v-IH-PNT" firstAttribute="width" secondItem="tUH-pJ-z7d" secondAttribute="width" id="cTJ-Ja-IQd"/>
+                            <constraint firstItem="nM5-8a-yGh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:568" id="dKk-J8-wwv"/>
+                            <constraint firstItem="x5T-Zr-as5" firstAttribute="width" secondItem="nM5-8a-yGh" secondAttribute="width" id="p4N-nA-S2K"/>
+                            <constraint firstItem="x5T-Zr-as5" firstAttribute="leading" secondItem="nM5-8a-yGh" secondAttribute="leading" id="wte-If-QXF"/>
+                            <constraint firstItem="tUH-pJ-z7d" firstAttribute="width" secondItem="nM5-8a-yGh" secondAttribute="width" id="xHA-Nw-e8M"/>
+                            <constraint firstItem="96v-IH-PNT" firstAttribute="height" secondItem="tUH-pJ-z7d" secondAttribute="height" id="xiX-4G-2lM"/>
+                            <constraint firstItem="tUH-pJ-z7d" firstAttribute="height" secondItem="nM5-8a-yGh" secondAttribute="height" id="yFL-vD-qYv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-581.25" y="30.633802816901408"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.jpg" width="1600" height="1200"/>
+        <image name="arrow-bold-left-ios-7-interface-symbol_318-34824.jpeg" width="626" height="626"/>
+        <image name="knowledge_graph_logo.png" width="302" height="302"/>
+        <image name="seat.jpg" width="1200" height="1200"/>
+    </resources>
 </document>
